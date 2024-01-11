@@ -1,0 +1,97 @@
+:root
+{
+    --BackGround-Color :#b5bec6 ;
+    --Primary-Color :#364652 ;
+    --Text-Color : #071108;
+    --Alert-Color : #c7dbe6 ;
+    --Text-Color-2:#bfb1c1;
+}
+
+/* Home */
+    /* Nav */
+        #Nav > .nav-username
+        {
+            color: var(--Text-Color);
+        }
+        #Nav > .nav-item 
+        {
+            color: var(--Text-Color);
+        }
+        #Nav > .nav-item > ul > li:hover
+        {
+            color: var(--BackGround-Color);
+        }
+    /* Baner */
+    #Baner
+    {
+        background-color: var(--BackGround-Color);
+    }
+        /* BanerRightSide */
+        #Baner > #BanerLeftSide-1
+        {
+            background-color:var(--Alert-Color);
+        }
+        #Baner > #BanerLeftSide-2
+        {
+            background-color:var(--BackGround-Color)
+        }
+        /* BanerRightSide */
+            #Baner > #BanerRightSide
+            {
+                background-color: var(--Primary-Color);
+            }
+        /* BanerText */
+        #Baner > #BanerText > #BanerJobTitle
+        {
+            color: var(--Alert-Color);
+        }    
+        #Baner > #BanerText > #BanerSentence
+        {
+            color: var(--Text-Color);
+        }
+        #Baner > #BanerText > #BanerSentence > span
+        {
+            color: var(--Primary-Color);
+        }
+        #Baner > #BanerText > #BanerButton >#btnHireMe
+        {
+            background-color: var(--Primary-Color);
+            color: var(--BackGround-Color);
+        }
+        #Baner > #BanerText > #BanerButton >#btnDownloadCV
+        {
+            background: transparent ;
+            color: var(--Primary-Color);
+            border-color: var(--Primary-Color);
+        }
+        #Baner > #BanerText > #BanerButton >#btnHireMe:hover
+        {
+            background: transparent ;
+            color: var(--Primary-Color);
+            border:2px solid var(--Primary-Color);
+        }
+        #Baner > #BanerText > #BanerButton >#btnDownloadCV:hover
+        {
+            background-color: var(--Primary-Color);
+            color: var(--BackGround-Color);
+        }
+        /* Statistics */
+        #Home > #Statistics > div > p
+        {
+            background-color: var(--Alert-Color);
+            color: var(--Primary-Color);
+        }
+        #Home > #Statistics > div > div > p
+        {
+            color: var(--Text-Color);
+        }
+        #Home > #Statistics > div > div > p > span
+        {
+            color: var(--BackGround-Color);
+        }
+        #Home > #Statistics > div > div > span
+        {
+            color: var(--BackGround-Color);
+        }
+
+
