@@ -1,0 +1,193 @@
+p , h1 , h2 , h3 , h4 , h5 , h6 , span 
+{
+    cursor: default;
+}
+.SLide-Show
+{
+    display:flex !important;
+    transition: all 2s ease-in;
+}
+
+/* Home */
+    /* Nav */
+        #Nav
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            margin-left: 15%;
+            margin-right: 15%;
+            width: 70%;
+            height: 100px;
+            padding-top: 20px;
+            background-color: transparent;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        #Nav > .nav-username
+        {
+            width: 30%;
+            padding: 0;
+            margin: 0;
+            font-size: 35px;
+            display: flex;
+            justify-content: start;
+        }
+        #Nav > .nav-item 
+        {
+            width: 70%;
+            padding: 0;
+            margin: 0;
+            justify-content: space-between;
+        }
+        #Nav > .nav-item > ul
+        {
+            padding-top: 17px;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            padding-left: 0;
+            justify-content: space-between;
+        }
+        #Nav > .nav-item > ul > li
+        {
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    /* Baner */
+        #Baner
+        {
+            position: relative;
+            width: 100%;
+            height: 800px;
+            display: flex;
+            flex-direction: row;
+        }
+        /* BanerLeftSide */
+            #Baner > #BanerLeftSide-1 
+            {
+                position: absolute;
+                width: 40%;
+                height: 800px;
+                clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+            }
+            #Baner > #BanerLeftSide-2 
+            {
+                position: absolute;
+                width: 39.5%;
+                height: 800px;
+                clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+            }
+        /* BanerRightSide */
+            #Baner > #BanerRightSide
+            {
+                width: 65%;
+                margin-left: 35%;
+                height: 800px;
+            }
+
+            #Baner > #BanerRightSide > img
+            {
+                position: absolute;
+                width: 700px;
+                height: 800px;
+                margin-left: 200px;
+            }
+        /* BanerText */
+            #Baner > #BanerText
+            {
+                display: flex;
+                flex-wrap: nowrap;
+                width: 600px;
+                flex-direction: column;
+                position: absolute;
+                top: 30% ;
+                left: 20% ;
+            }
+            #Baner > #BanerText > #BanerJobTitle
+            {
+                font-size: 25px;
+                font-weight: 700;
+            }
+            #Baner > #BanerText > #BanerSentence
+            {
+                font-size: 45px;
+                font-weight: 700;
+            }
+            #Baner > #BanerText > #BanerButton
+            {
+                width: 300px;
+                height: 100px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            #Baner > #BanerText > #BanerButton >#btnHireMe
+            {
+                font-size: 20px;
+                border: none ;
+                border-radius: 7px;
+                width: 100px;
+                height: 50px;
+            }
+            #Baner > #BanerText > #BanerButton >#btnDownloadCV
+            {
+                font-size: 20px;
+                border: 2px solid ;
+                border-radius: 7px;
+                width: 150px;
+                height: 50px;
+            }
+        /* Statistics */
+           #Home > #Statistics
+            {
+                padding-left: 15%;
+                padding-right: 15%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            #Home > #Statistics > div
+            {   
+                margin-top: 5px;
+                width: 300px;
+                height: 200px;
+                display: flex;
+                flex-direction: row;
+            }
+            #Home > #Statistics > div > p
+            {
+                text-align: center;
+                font-size: 35px;
+                margin-top: 50px;
+                margin-left: 10px;
+                padding-top: 20px;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+            #Home > #Statistics > div > div
+            {
+                margin-top: 60px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+            #Home > #Statistics > div > div > p
+            {
+                font-size: 20px;
+            }
+            #Home > #Statistics > div > div > p >span
+            {
+                font-weight: 500;
+                font-size: 25px;
+            }
+            #Home > #Statistics > div > div > span
+            {
+                font-size: 30px;
+                font-weight: 500;
+            }
+        
