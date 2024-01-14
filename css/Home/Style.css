@@ -2,12 +2,13 @@ p , h1 , h2 , h3 , h4 , h5 , h6 , span
 {
     cursor: default;
 }
-.SLide-Show
-{
-    display:flex !important;
-    transition: all 2s ease-in;
+a{
+    text-decoration: none;
 }
-
+.active
+{
+    border-bottom : 3px solid;
+}
 /* Home */
     /* Nav */
         #Nav
@@ -29,7 +30,7 @@ p , h1 , h2 , h3 , h4 , h5 , h6 , span
         #Nav > .nav-username
         {
             width: 30%;
-            padding: 0;
+            padding-top: 15px;
             margin: 0;
             font-size: 35px;
             display: flex;
@@ -49,14 +50,28 @@ p , h1 , h2 , h3 , h4 , h5 , h6 , span
             display: flex;
             flex-direction: row;
             padding-left: 0;
+            padding-top: 0;
             justify-content: space-between;
         }
         #Nav > .nav-item > ul > li
         {
             cursor: pointer;
             text-transform: uppercase;
+            height: 75px;
             font-size: 20px;
             font-weight: 500;
+        }
+        #Nav > .nav-item > ul > li >a
+        {
+           display: flex;
+           padding-top:30px ;
+           height: 75px;
+           transition: all 0.5s ease-in-out;
+        }
+        #Nav > .nav-item > ul > li >a:hover
+        {
+            padding-top: 0px;
+            transition: all 0.5s ease-in-out;
         }
     /* Baner */
         #Baner
@@ -93,9 +108,11 @@ p , h1 , h2 , h3 , h4 , h5 , h6 , span
             #Baner > #BanerRightSide > img
             {
                 position: absolute;
+                display:flex !important;
                 width: 700px;
                 height: 800px;
                 margin-left: 200px;
+                transition: all 1s ease-in;
             }
         /* BanerText */
             #Baner > #BanerText
