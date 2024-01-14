@@ -1,3 +1,8 @@
+/* Public Style */
+body 
+{
+    padding: 0 !important;
+}
 p , h1 , h2 , h3 , h4 , h5 , h6 , span 
 {
     cursor: default;
@@ -159,52 +164,156 @@ a{
                 width: 150px;
                 height: 50px;
             }
-        /* Statistics */
-           #Home > #Statistics
+    /* Statistics */
+        #Home > #Statistics
+        {
+            padding-left: 15%;
+            padding-right: 15%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        #Home > #Statistics > div
+        {   
+            margin-top: 5px;
+            width: 300px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+        }
+        #Home > #Statistics > div > p
+        {
+            text-align: center;
+            font-size: 35px;
+            margin-top: 50px;
+            margin-left: 10px;
+            padding-top: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        #Home > #Statistics > div > div
+        {
+            margin-top: 60px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        #Home > #Statistics > div > div > p
+        {
+            font-size: 20px;
+        }
+        #Home > #Statistics > div > div > p >span
+        {
+            font-weight: 500;
+            font-size: 25px;
+        }
+        #Home > #Statistics > div > div > span
+        {
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+/* Header */
+    header
+    {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 25px;
+    }
+    header > .header-username
+    {
+        width: 30%;
+        margin: 0;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+    }
+    header > .header-item
+    {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+    header > .header-item > ul
+    {
+        width: 100%;
+        padding-top: 17px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        padding-top: 0;
+        justify-content:space-evenly;
+    }
+    header > .header-item > ul > li
+    {
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 500;
+        align-self: center;
+    }
+/* Skills */
+    #Skills
+    {
+        margin-top: 10px;
+        padding-left: 15%;
+        padding-right: 15%;
+        width: 100%;
+        height: 900px;
+        display: flex;
+        flex-direction: row;
+    }
+    #Skills > img
+    {
+        width: 50%;
+        height: 100%;
+        border-radius: 10%;
+    }
+        /* Skills Info */
+        #Skills > .Skills-Info 
+        {
+            padding-top: 100px;
+            width: 45%;
+            height: 900px;
+            margin-left: 5%;
+            display: flex;
+            flex-direction: column;
+        }
+            /* TopBox */
+            #Skills > .Skills-Info > #Top-Box
             {
-                padding-left: 15%;
-                padding-right: 15%;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
+                width: 100%;
+                height: 250px;
             }
-            #Home > #Statistics > div
-            {   
-                margin-top: 5px;
-                width: 300px;
-                height: 200px;
-                display: flex;
-                flex-direction: row;
-            }
-            #Home > #Statistics > div > p
+            #Skills > .Skills-Info > #Top-Box > .MyInfo
             {
-                text-align: center;
-                font-size: 35px;
-                margin-top: 50px;
-                margin-left: 10px;
-                padding-top: 20px;
-                width: 100px;
+                font-size: 18px;
+                font-weight: 200;
+            }
+            #Skills > .Skills-Info > #Top-Box > .AboutMe
+            {
+                font-size: 28px;
+                font-weight: 500;
+            }
+            #Skills > .Skills-Info > #Top-Box > .AboutText
+            {
+                font-size: 18;
+                font-weight: 400;
+            }
+            /* MiddleBox */
+            #Skills > .Skills-Info > #Middle-Box
+            {
+                width: 100%;
+                height: 350px;
+            }
+
+            /* BottomBox */
+            #Skills > .Skills-Info > #Bottom-Box
+            {
+                width: 100%;
                 height: 100px;
-                border-radius: 50%;
             }
-            #Home > #Statistics > div > div
-            {
-                margin-top: 60px;
-                margin-bottom: 10px;
-                margin-left: 10px;
-            }
-            #Home > #Statistics > div > div > p
-            {
-                font-size: 20px;
-            }
-            #Home > #Statistics > div > div > p >span
-            {
-                font-weight: 500;
-                font-size: 25px;
-            }
-            #Home > #Statistics > div > div > span
-            {
-                font-size: 30px;
-                font-weight: 500;
-            }
-        
