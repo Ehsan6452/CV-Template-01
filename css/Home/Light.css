@@ -6,7 +6,18 @@
     --Alert-Color : #c7dbe6 ;
     --Text-Color-2:#bfb1c1;
 }
-
+a{
+    color: var(--Text-Color);
+}
+a:hover
+{
+    color: var(--BackGround-Color);
+}
+.active
+{
+    color: var(--BackGround-Color) !important;
+    border-bottom-color: var(--BackGround-Color);
+}
 /* Home */
     /* Nav */
         #Nav > .nav-username
@@ -18,8 +29,8 @@
             color: var(--Text-Color);
         }
         #Nav > .nav-item > ul > li:hover
-        {
-            color: var(--BackGround-Color);
+        {            
+            color: var(--BackGround-Color); 
         }
     /* Baner */
     #Baner
@@ -57,28 +68,37 @@
         {
             background-color: var(--Primary-Color);
             color: var(--BackGround-Color);
+            transition: all 0.5s ease-in-out;
         }
         #Baner > #BanerText > #BanerButton >#btnDownloadCV
         {
-            background: transparent ;
-            color: var(--Primary-Color);
-            border-color: var(--Primary-Color);
+            background-color: var(--Primary-Color);
+            color: var(--BackGround-Color);
+            transition: all 0.5s ease-in-out;
         }
         #Baner > #BanerText > #BanerButton >#btnHireMe:hover
         {
             background: transparent ;
             color: var(--Primary-Color);
             border:2px solid var(--Primary-Color);
+            box-shadow: 10px 10px var(--Primary-Color) ;
+           transition: all 0.5s ease-in-out;
+
         }
         #Baner > #BanerText > #BanerButton >#btnDownloadCV:hover
         {
-            background-color: var(--Primary-Color);
-            color: var(--BackGround-Color);
+            background: transparent ;
+            color: var(--Primary-Color);
+            border:2px solid var(--Primary-Color);
+            box-shadow: 10px 10px var(--Primary-Color) ;
+            box-shadow: 10px 10px var(--Primary-Color) ;
+            transition: all 0.5s ease-in-out;
+
         }
         /* Statistics */
         #Home > #Statistics > div > p
         {
-            background-color: var(--Alert-Color);
+            background-color: var(--BackGround-Color);
             color: var(--Primary-Color);
         }
         #Home > #Statistics > div > div > p
