@@ -1,17 +1,15 @@
 :root
 {
+    --Body :#f0f0f0 ;
     --BackGround-Color :#b5bec6 ;
     --Primary-Color :#364652 ;
     --Text-Color : #071108;
     --Alert-Color : #c7dbe6 ;
     --Text-Color-2:#bfb1c1;
 }
-a{
-    color: var(--Text-Color);
-}
-a:hover
+body
 {
-    color: var(--BackGround-Color);
+    background-color: var(--Body);
 }
 .active
 {
@@ -28,9 +26,13 @@ a:hover
         {
             color: var(--Text-Color);
         }
-        #Nav > .nav-item > ul > li:hover
-        {            
-            color: var(--BackGround-Color); 
+        #Nav > .nav-item > ul > li > a
+        {
+            color: var(--Text-Color);
+        }
+        #Nav > .nav-item > ul > li > a:hover
+        {
+            color: var(--BackGround-Color);
         }
     /* Baner */
     #Baner
@@ -95,23 +97,53 @@ a:hover
             transition: all 0.5s ease-in-out;
 
         }
-        /* Statistics */
-        #Home > #Statistics > div > p
+    /* Statistics */
+    #Home > #Statistics > div > p
+    {
+        background-color: var(--BackGround-Color);
+        color: var(--Primary-Color);
+    }
+    #Home > #Statistics > div > div > p
+    {
+        color: var(--Text-Color);
+    }
+    #Home > #Statistics > div > div > p > span
+    {
+        color: var(--BackGround-Color);
+    }
+    #Home > #Statistics > div > div > span
+    {
+        color: var(--BackGround-Color);
+    }
+
+/* Header */
+    header
+    {
+       background-color: var(--BackGround-Color);
+    }
+    header > .header-item > ul > li > a
+    {
+        color: var(--Text-Color);
+    }
+    header > .header-item > ul > li > a:hover
+    {
+        color: var(--Body);
+    }
+/* Skills */
+    #Skills > img
+    {
+        background-image: linear-gradient(to bottom right, var(--BackGround-Color) , var(--Primary-Color));
+    }
+        /* TopBox */
+        #Skills > .Skills-Info > #Top-Box > .MyInfo
         {
-            background-color: var(--BackGround-Color);
             color: var(--Primary-Color);
         }
-        #Home > #Statistics > div > div > p
+        #Skills > .Skills-Info > #Top-Box > .AboutMe
         {
             color: var(--Text-Color);
         }
-        #Home > #Statistics > div > div > p > span
+        #Skills > .Skills-Info > #Top-Box > .AboutText
         {
-            color: var(--BackGround-Color);
+            color: var(--Primary-Color);
         }
-        #Home > #Statistics > div > div > span
-        {
-            color: var(--BackGround-Color);
-        }
-
-
