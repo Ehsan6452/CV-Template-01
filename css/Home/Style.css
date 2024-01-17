@@ -12,7 +12,13 @@ a{
 }
 .active
 {
-    border-bottom : 3px solid;
+    border-bottom : 3px solid !important;
+    padding-bottom: 10px;
+}
+.hidden
+{
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
 }
 /* Home */
     /* Nav */
@@ -183,6 +189,7 @@ a{
         }
         #Home > #Statistics > div > p
         {
+            cursor: pointer;
             text-align: center;
             font-size: 35px;
             margin-top: 50px;
@@ -191,6 +198,12 @@ a{
             width: 100px;
             height: 100px;
             border-radius: 50%;
+            transition: all 0.5s ease-in-out;
+        }
+        #Home > #Statistics > div > p:hover
+        {
+            margin-top: 20px;
+            transition: all 0.5s ease-in-out;
         }
         #Home > #Statistics > div > div
         {
@@ -256,25 +269,26 @@ a{
         font-weight: 500;
         align-self: center;
     }
-/* Skills */
-    #Skills
+/* About */
+    #About
     {
-        margin-top: 10px;
+        padding-top: 100px;
         padding-left: 15%;
         padding-right: 15%;
         width: 100%;
-        height: 900px;
+        height: 1000px;
         display: flex;
         flex-direction: row;
     }
-    #Skills > img
+    #About > img
     {
-        width: 50%;
-        height: 100%;
+        width: 45%;
+        height: 800px;
+        margin-top: 50px;
         border-radius: 10%;
     }
-        /* Skills Info */
-        #Skills > .Skills-Info 
+        /* About Info */
+        #About > .About-Info 
         {
             padding-top: 100px;
             width: 45%;
@@ -284,36 +298,395 @@ a{
             flex-direction: column;
         }
             /* TopBox */
-            #Skills > .Skills-Info > #Top-Box
+            #About > .About-Info > #Top-Box
             {
                 width: 100%;
                 height: 250px;
             }
-            #Skills > .Skills-Info > #Top-Box > .MyInfo
+            #About > .About-Info > #Top-Box > .MyInfo
             {
                 font-size: 18px;
                 font-weight: 200;
+                text-transform: capitalize;
             }
-            #Skills > .Skills-Info > #Top-Box > .AboutMe
+            #About > .About-Info > #Top-Box > .AboutMe
             {
                 font-size: 28px;
                 font-weight: 500;
+                text-transform: capitalize;
             }
-            #Skills > .Skills-Info > #Top-Box > .AboutText
+            #About > .About-Info > #Top-Box > .AboutText
             {
                 font-size: 18;
                 font-weight: 400;
             }
             /* MiddleBox */
-            #Skills > .Skills-Info > #Middle-Box
+            #About > .About-Info > #Middle-Box
             {
                 width: 100%;
-                height: 350px;
+                height: 300px;
+                display: flex;
+                flex-direction: row;
             }
-
+            #About > .About-Info > #Middle-Box > ul
+            {
+                height: 300px;
+                list-style-type: none;
+                padding-left: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            #About > .About-Info > #Middle-Box > .Subtitle
+            {
+                width: 30%;
+            }
+            #About > .About-Info > #Middle-Box > .Subtitle > li
+            {
+                cursor: default;
+                font-size: 25px;
+            }
+            #About > .About-Info > #Middle-Box > .Data
+            {
+                width: 70%;
+            }
+            #About > .About-Info > #Middle-Box > .Data > li
+            {
+                cursor: default;
+                font-size: 20px;
+            }
             /* BottomBox */
-            #Skills > .Skills-Info > #Bottom-Box
+            #About > .About-Info > #Bottom-Box
             {
                 width: 100%;
                 height: 100px;
+                padding-top: 50px;
+                padding-left: 50px;
+                display: flex;
+                flex-direction: row;
             }
+            #About > .About-Info > #Bottom-Box > div
+            {
+                height: 50px;
+                width: 80px;
+                border-left: 2px solid black ;
+                display: flex;
+                flex-direction: row;
+                transition:all 0.5s ease-in-out;
+            }
+            #About > .About-Info > #Bottom-Box > div:hover
+            {
+                width: 150px;
+                transition:all 0.7s ease-in-out;
+            }
+            #About > .About-Info > #Bottom-Box  img
+            {
+                position: absolute;
+                margin-left: 10px;
+                width: 50px;
+                height: 50px;
+                border-radius:30%;
+            }
+            #About > .About-Info > #Bottom-Box  p
+            {
+                position: absolute;
+                margin-top: 10px;
+                margin-left: 5px;
+                width: 100px;
+                height: 50px;
+                font-size: 20px;
+                font-weight: 500;
+                text-align: left;
+                opacity: 0;
+                transition: all 0.4s ease-in-out;
+            }
+            #About > .About-Info > #Bottom-Box  p:hover
+            {
+                opacity: 100;
+                width: 100px;
+                padding-left: 70px;
+                transition: all 0.7s ease-in-out;
+            }
+/* Skills */
+#Skills
+{
+    padding-top: 100px;
+    width: 100%;
+    height: 1000px;
+}
+#Skills > h2
+{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18;
+    font-weight: 300;
+}
+#Skills > h3
+{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 28;
+    margin-top: 15px;
+    font-weight: 500;
+}
+#Skills > p
+{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 25px;
+    font-size: 18;
+    font-weight: 300;
+}
+    /* SkillsBox */
+        #Skills > #Skills-Box
+        {
+            margin-left: 20%;
+            margin-right: 20%;
+            width: 60%;
+            height: 750px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction :row;
+            flex-wrap: wrap;
+        }
+            /* SkillsCard */
+            #Skills > #Skills-Box >.Skills-Card
+            {
+                width: 30%;
+                height: 350px;
+                display: flex;  
+                border-radius: 25px;
+                flex-direction: column;
+            }
+            #Skills > #Skills-Box >.Skills-Card >h2
+            {
+                text-align: center;
+                font-size: 25px;
+                margin-top: 10px;
+                font-weight: 600;
+            }
+            
+            #Skills > #Skills-Box >.Skills-Card  > div 
+            {   
+                align-self: center;
+                border-radius: 50%;
+            }
+            #Skills > #Skills-Box >.Skills-Card  .CircleBack
+            {
+                margin-top: 60px;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                background-color: aqua;
+            }           
+            #Skills > #Skills-Box >.Skills-Card  .CircleTop
+            {
+                margin-top: 70px;
+                width: 180px;
+                height: 180px;
+                position: absolute;
+                transition: all 0.3s ease-in-out;
+            }
+            #Skills > #Skills-Box >.Skills-Card > p
+            {   
+                position: relative;
+                font-size: 25px;
+                margin-left: 45%;
+                margin-top: 30%;
+            }
+            .CircleProgres
+            {
+                margin-top: 60px;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+            } 
+            .Progres-90
+            {
+                /* Left Side Circle Progress : */
+                /* clip-path : polygon ( up , up-right , right , down-right ,
+                 down , down-left , percent , center) */
+                clip-path: polygon(50% 0 , 100% 0 , 100% 50% , 100% 100%
+                 , 50% 100% ,0% 100%,0% 50%, 0 0, 10% 5%, 50% 50%);
+            }
+            .Progres-80
+            {
+                /* Left Side Circle Progress : */
+                /* clip-path : polygon ( up , up-right , right , down-right ,
+                 down , down-left , percent , center) */
+                clip-path: polygon(50% 0 , 100% 0 , 100% 50% , 100% 100%
+                 , 50% 100% ,0% 100%,0 50% , 0 40%, 50% 50%);
+            }
+            .Progres-60
+            {
+                /* Left Side Circle Progress : */
+                /* clip-path : polygon ( up , up-right , right , down-right ,
+                 down , down-left , percent , center) */
+                clip-path: polygon(50% 0 , 100% 0 , 100% 50% , 100% 100%
+                 , 50% 100% ,0% 100% , 50% 50%);
+            }
+            .Progres-40
+            {
+                /* Left Side Circle Progress : */
+                /* clip-path : polygon ( up , up-right , right , down-right ,
+                 down , down-left , percent , center) */
+                clip-path: polygon(50% 0 , 100% 0 , 100% 50% , 100% 100% , 50% 50%);
+            }
+            #Skills > #Skills-Box >.Skills-Card > .CircleTop  img
+            {
+
+                margin-left: 15%;
+                margin-top: 15%;
+                width: 70%;
+                height: 70%;
+                border: none !important;
+                background: transparent;
+            }  
+            #Skills > #Skills-Box >.Skills-Card >.Card-Footer
+            {
+                width: 100%;
+                height: 75px;
+                border: none;
+                border-radius: 20px !important;
+                margin-top: 75px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            } 
+            #Skills > #Skills-Box >.Skills-Card >.Card-Footer > div
+            {
+                cursor: pointer;
+                margin-top: 15px;
+                width: 15%;
+                height: 50px;
+                transition: all 0.5s ease-in-out;
+            }
+            #Skills > #Skills-Box >.Skills-Card >.Card-Footer > div:hover
+            {
+                margin-top: 0;
+                transition: all 0.5s ease-in-out;
+            }
+            #Skills > #Skills-Box >.Skills-Card >.Card-Footer > div > img
+            {
+                margin-left: 3px;
+                width: 40px;
+                height: 40px;
+                background: transparent !important;
+                border: none;
+            }
+/* Services */
+#Services
+{
+    padding-top: 100px;
+    width: 100%;
+    height: 1000px;
+}
+#Services > h2
+{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18;
+    font-weight: 300;
+}
+#Services > h3
+{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 28;
+    margin-top: 15px;
+    font-weight: 500;
+}
+#Services > p
+{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 25px;
+    font-size: 18;
+    font-weight: 300;
+}
+    /* ServicesBox */
+    #Services > #ServicesBox
+    {
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+        height: 750px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+    #Services > #ServicesBox > div
+    {
+        width: 22%;
+        height: 300px;
+        border-top-right-radius: 25%;
+        border-bottom-left-radius: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+    #Services > #ServicesBox > div > .Services-img
+    {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-top: -40;
+        margin-left: 20px;
+        box-shadow:0px 15px 15px;
+    }
+    #Services > #ServicesBox > div > .Services-img > img
+    {
+        background: transparent;
+        border: none;
+        width: 90%;
+        height: 90%;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    #Services > #ServicesBox > div > h3
+    {
+        text-align: left;
+        margin-top: 75px;
+        margin-left: 15px;
+        width: 80%;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    #Services > #ServicesBox > div > .ServicesText
+    {
+        margin-top: 5px;
+        margin-right: 10%;
+        margin-left: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 80%;
+        height: 120px;
+    }
+    #Services > #ServicesBox > div > .ServicesText>p
+    {
+        text-align: left;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    #Services > #ServicesBox > div > .ServicesIcon
+    {
+        align-self: self-end;
+        width: 50%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    #Services > #ServicesBox > div > .ServicesIcon > img
+    {
+        cursor: pointer;
+        width: 25%;
+        height: 80%;
+        margin-right: 20px;
+        background: transparent;
+        border: none;
+    }
+        
