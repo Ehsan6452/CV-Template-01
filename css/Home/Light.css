@@ -13,8 +13,8 @@ body
 }
 .active
 {
-    color: var(--BackGround-Color) !important;
-    border-bottom-color: var(--BackGround-Color);
+    color: var(--Body) !important;
+    border-bottom-color: var(--Body) !important;
 }
 /* Home */
     /* Nav */
@@ -93,7 +93,6 @@ body
             color: var(--Primary-Color);
             border:2px solid var(--Primary-Color);
             box-shadow: 10px 10px var(--Primary-Color) ;
-            box-shadow: 10px 10px var(--Primary-Color) ;
             transition: all 0.5s ease-in-out;
 
         }
@@ -102,6 +101,11 @@ body
     {
         background-color: var(--BackGround-Color);
         color: var(--Primary-Color);
+    }
+    #Home > #Statistics > div > p:hover
+    {
+        background: transparent;
+        text-shadow:0px 40px 3px var(--BackGround-Color);
     }
     #Home > #Statistics > div > div > p
     {
@@ -129,21 +133,111 @@ body
     {
         color: var(--Body);
     }
-/* Skills */
-    #Skills > img
+/* About */
+    #About > img
     {
         background-image: linear-gradient(to bottom right, var(--BackGround-Color) , var(--Primary-Color));
     }
         /* TopBox */
-        #Skills > .Skills-Info > #Top-Box > .MyInfo
+        #About > .About-Info > #Top-Box > .MyInfo
         {
-            color: var(--Primary-Color);
+            color: var(--BackGround-Color);
         }
-        #Skills > .Skills-Info > #Top-Box > .AboutMe
+        #About > .About-Info > #Top-Box > .AboutMe
         {
             color: var(--Text-Color);
         }
-        #Skills > .Skills-Info > #Top-Box > .AboutText
+        #About > .About-Info > #Top-Box > .AboutText
         {
             color: var(--Primary-Color);
         }
+        /* MiddleBox */
+        #About > .About-Info > #Middle-Box > .Subtitle > li
+        {
+            color: var(--Primary-Color);
+        }
+        #About > .About-Info > #Middle-Box > .Data > li
+        {
+            color: var(--Text-Color);
+        }
+        /* BottomBox */
+        #About > .About-Info > #Bottom-Box > div
+        {
+            border-color: var(--Primary-Color);
+        }
+        #About > .About-Info > #Bottom-Box  img
+        {
+            background-color: var(--BackGround-Color);
+        }
+        #About > .About-Info > #Bottom-Box  p
+        {
+            color: var(--Text-Color);
+        }
+/* Skills */
+#Skills > h2
+{
+    color: var(--BackGround-Color);
+}  
+#Skills > h3
+{
+    color: var(--Text-Color);
+}
+#Skills > p
+{
+    color: var(--Primary-Color);
+}
+    /* SkillsCard */
+        #Skills > #Skills-Box >.Skills-Card
+        {
+            background-color: var(--BackGround-Color);
+        }
+        #Skills > #Skills-Box >.Skills-Card >h2
+        {
+            color: var(--Text-Color);
+        }
+        #Skills > #Skills-Box >.Skills-Card > .CircleBack
+        {
+            background-color: var(--Alert-Color);
+        }
+        .CircleProgres
+        {
+            background-color: var(--Primary-Color);
+        }
+        #Skills > #Skills-Box >.Skills-Card > .CircleTop
+        {
+            background-color: var(--BackGround-Color);
+        }
+        #Skills > #Skills-Box >.Skills-Card > p
+        {
+            color: var(--Body);
+        }
+        #Skills > #Skills-Box >.Skills-Card >.Card-Footer
+        {
+            background: transparent !important;
+        }
+/* Services */
+#Services > h2
+{
+    color: var(--BackGround-Color);
+}  
+#Services > h3
+{
+    color: var(--Text-Color);
+}
+#Services > p
+{
+    color: var(--Primary-Color);
+}
+    /* ServicesBox */
+    #Services > #ServicesBox >div
+    {
+        background-color: var(--BackGround-Color);
+    }
+    #Services > #ServicesBox > div > .Services-img
+    {
+        background-color: var(--Alert-Color);
+    }
+    #Services > #ServicesBox > div > h3
+    {
+        color: var(--Text-Color);
+    }
