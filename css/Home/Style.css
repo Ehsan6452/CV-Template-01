@@ -369,7 +369,7 @@ a{
             {
                 height: 50px;
                 width: 80px;
-                border-left: 2px solid black ;
+                border-right: 2px solid black ;
                 display: flex;
                 flex-direction: row;
                 transition:all 0.5s ease-in-out;
@@ -549,7 +549,7 @@ a{
                 height: 75px;
                 border: none;
                 border-radius: 20px !important;
-                margin-top: 75px;
+                margin-top: 60px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
@@ -622,10 +622,10 @@ a{
     {
         width: 22%;
         height: 300px;
-        border-top-right-radius: 25%;
-        border-bottom-left-radius: 25%;
         display: flex;
         flex-direction: column;
+        border-top-right-radius: 25%;
+        border-bottom-left-radius: 25%;
     }
     #Services > #ServicesBox > div > .Services-img
     {
@@ -687,6 +687,191 @@ a{
         height: 80%;
         margin-right: 20px;
         background: transparent;
+        border : none;
+    }
+    #Services > #ServicesBox > div > .ServicesIcon > img:hover
+    {
+        transform: rotateY(360deg);
+        transition: all 1.5s ease-in-out;
+        -webkit-transition: all 1.5s ease-in-out;
+        -moz-transition: all 1.5s ease-in-out;
+        -ms-transition: all 1.5s ease-in-out;
+        -o-transition: all 1.5s ease-in-out;
+}
+/* Project */
+#Project
+{
+    padding-top: 100px;
+    width: 100%;
+    height: 1000px;
+}
+#Project > h2
+{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18;
+    font-weight: 300;
+}
+#Project > h3
+{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 28;
+    margin-top: 15px;
+    font-weight: 500;
+}
+#Project > p
+{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 25px;
+    font-size: 18;
+    font-weight: 300;
+}
+    /* ProjectBox */
+    #Project > #ProjectBox
+    {
+        z-index: 2;
+        margin-top: 20px;
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 90%;
+        height: 750px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content : space-evenly;
+    }
+    #Project > #ProjectBox >div
+    {
+        z-index: 3;
+        width: 24%;
+        height: 325px;
+        border-radius:15px;
+        padding: 0 !important;
+}
+    #Project > #ProjectBox > div > img
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0 !important;
+        border-radius:15px;
+        background:transparent;
         border: none;
     }
-        
+    #Project > #ProjectBox > div > .ProjectInfo 
+    {
+        opacity: 70%;
+        width: 98%;
+        margin-left: 1%;
+        height: 0%;
+        margin-top: 0%;
+        display: flex;
+        flex-direction: column;
+        transition: all 1s ease-in-out;
+    } 
+    #Project > #ProjectBox > div > .OpenDetail
+    {
+        margin-top: -64%;
+        height: 80%;
+        transition: all 1s ease-in-out;
+    }
+    #Project > #ProjectBox > div > .CloseDetail
+    {
+        overflow: hidden;
+        z-index: 1;
+        height: 1%;
+        margin-top: -2%;
+        transition: all 0.5s ease-in-out;
+    }
+    .HideDetail
+    {
+        opacity: 0% !important;
+        transition: all 0.5s ease-in-out;
+    }
+    .ShowDetail
+    {
+      opacity: 100%;
+      transition: all 2s ease-in-out;
+    }
+    #Project > #ProjectBox > div > .ProjectInfo > .Projectbtn
+    {
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 20px;
+        width: 50%;
+        height: 50px;
+    }
+    #Project > #ProjectBox > div > .ProjectInfo > h5 
+    {
+        text-align: center;
+        font-size: 25px;
+    }
+    #Project > #ProjectBox > div > .ProjectInfo > p
+    {
+        margin-right: 10%;
+        margin-left: 10%;
+        font-size: 16px;
+    }
+    #Project > #ProjectBox > div > .ProjectInfo > .Projectbtn> img
+    {
+        background : transparent ;
+        border: none;
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+/* Client */
+#Client
+{
+    position: relative;
+    z-index:5;
+    width: 100%;
+    height: 500px;
+}
+#Client > h2
+{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18;
+    font-weight: 300;
+}
+#Client > h3
+{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 28;
+    margin-top: 15px;
+    font-weight: 500;
+}
+#Client > p
+{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 25px;
+    font-size: 18;
+    font-weight: 300;
+}
+    /* Comments */
+    #Comments
+    {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        height: 60%;
+        margin-top: 30px;
+        border: 1px solid black;
+        overflow-x:scroll;
+        display: flex;
+        flex-direction: row;
+    }
+    #Comments > div
+    {
+        border: 1px solid black;
+        width: 30%;
+        height: 80%;
+        margin-top: 3%;
+        margin-left: 3%;
+    }
