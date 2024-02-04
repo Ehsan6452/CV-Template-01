@@ -43,53 +43,40 @@ a{
     font-size: 18;
     font-weight: 300;
 }
-.container
-{
-    margin-left: 10%;
-    width: 80%;
-}
 /* Home */
     /* Nav */
         #Nav
         {
+            margin-left: 10%;
+            width: 80%;
             position: absolute;
             top: 0;
             left: 0;
             z-index: 10;
             height: 100px;
-            padding-top: 20px;
+            padding-top: 30px;
             background-color: transparent;
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
         }
-        #nav > img
+        .nav-username
         {
-            cursor: pointer;
-            width: 70px;
-            height: 70px;
-            margin-right: 7%;
-            border-radius:50%;
-            border: none;
-            background : transparent !important;
-        }
-        #Nav > .nav-username
-        {
-            width: 25%;
+            width: 40%;
             padding-top: 15px;
             margin: 0;
             font-size: 35px;
             display: flex;
             justify-content: start;
         }
-        #Nav > .nav-item 
+        .nav-item 
         {
-            width: 62%;
+            width: 60%;
             padding: 0;
             margin: 0;
             justify-content: space-between;
         }
-        #Nav > .nav-item > ul
+        .nav-item > ul
         {
             padding-top: 17px;
             list-style: none;
@@ -99,7 +86,7 @@ a{
             padding-top: 0;
             justify-content: space-between;
         }
-        #Nav > .nav-item > ul > li
+        .nav-item > ul > li
         {
             cursor: pointer;
             text-transform: uppercase;
@@ -107,14 +94,14 @@ a{
             font-size: 20px;
             font-weight: 500;
         }
-        #Nav > .nav-item > ul > li >a
+        .nav-item > ul > li >a
         {
            display: flex;
            padding-top:30px ;
            height: 75px;
            transition: all 0.5s ease-in-out;
         }
-        #Nav > .nav-item > ul > li >a:hover
+        .nav-item > ul > li >a:hover
         {
             padding-top: 0px;
             transition: all 0.5s ease-in-out;
@@ -129,14 +116,14 @@ a{
             flex-direction: row;
         }
         /* BanerLeftSide */
-            #Baner > #BanerLeftSide-1 
+            #BanerLeftSide-1 
             {
                 position: absolute;
                 width: 40%;
                 height: 800px;
                 clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
             }
-            #Baner > #BanerLeftSide-2 
+            #BanerLeftSide-2 
             {
                 position: absolute;
                 width: 39.5%;
@@ -144,14 +131,14 @@ a{
                 clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
             }
         /* BanerRightSide */
-            #Baner > #BanerRightSide
+            #BanerRightSide
             {
                 width: 65%;
                 margin-left: 35%;
                 height: 800px;
             }
 
-            #Baner > #BanerRightSide > img
+            #BanerRightSide > img
             {
                 position: absolute;
                 display:flex !important;
@@ -161,7 +148,7 @@ a{
                 transition: all 1s ease-in;
             }
         /* BanerText */
-            #Baner > #BanerText
+            #BanerText
             {
                 display: flex;
                 flex-wrap: nowrap;
@@ -171,17 +158,17 @@ a{
                 top: 30% ;
                 left: 20% ;
             }
-            #Baner > #BanerText > #BanerJobTitle
+            #BanerJobTitle
             {
                 font-size: 25px;
                 font-weight: 700;
             }
-            #Baner > #BanerText > #BanerSentence
+            #BanerSentence
             {
                 font-size: 45px;
                 font-weight: 700;
             }
-            #Baner > #BanerText > #BanerButton
+            #BanerButton
             {
                 width: 300px;
                 height: 100px;
@@ -189,7 +176,7 @@ a{
                 flex-direction: row;
                 justify-content: space-around;
             }
-            #Baner > #BanerText > #BanerButton >#btnHireMe
+            #btnHireMe
             {
                 font-size: 20px;
                 border: none ;
@@ -197,7 +184,7 @@ a{
                 width: 100px;
                 height: 50px;
             }
-            #Baner > #BanerText > #BanerButton >#btnDownloadCV
+            #btnDownloadCV
             {
                 font-size: 20px;
                 border: 2px solid ;
@@ -206,7 +193,7 @@ a{
                 height: 50px;
             }
     /* Statistics */
-        #Home > #Statistics
+        #Statistics
         {
             padding-left: 15%;
             padding-right: 15%;
@@ -214,7 +201,7 @@ a{
             flex-direction: row;
             justify-content: space-around;
         }
-        #Home > #Statistics > div
+        #Statistics > div
         {   
             margin-top: 5px;
             width: 300px;
@@ -222,7 +209,7 @@ a{
             display: flex;
             flex-direction: row;
         }
-        #Home > #Statistics > div > p
+        #Statistics > div > p
         {
             cursor: pointer;
             text-align: center;
@@ -235,27 +222,27 @@ a{
             border-radius: 50%;
             transition: all 0.5s ease-in-out;
         }
-        #Home > #Statistics > div > p:hover
+        #Statistics > div > p:hover
         {
             margin-top: 20px;
             transition: all 0.5s ease-in-out;
         }
-        #Home > #Statistics > div > div
+        #Statistics > div > div
         {
             margin-top: 60px;
             margin-bottom: 10px;
             margin-left: 10px;
         }
-        #Home > #Statistics > div > div > p
+        #Statistics > div > div > p
         {
             font-size: 20px;
         }
-        #Home > #Statistics > div > div > p >span
+        #Statistics > div > div > p >span
         {
             font-weight: 500;
             font-size: 25px;
         }
-        #Home > #Statistics > div > div > span
+        #Statistics > div > div > span
         {
             font-size: 30px;
             font-weight: 500;
@@ -271,7 +258,7 @@ a{
         justify-content: space-around;
         padding-top: 25px;
     }
-    header > .header-username
+    .header-username
     {
         width: 30%;
         margin: 0;
@@ -279,13 +266,13 @@ a{
         display: flex;
         justify-content: center;
     }
-    header > .header-item
+    .header-item
     {
         width: 70%;
         display: flex;
         justify-content: space-between;
     }
-    header > .header-item > ul
+    .header-item > ul
     {
         width: 100%;
         padding-top: 17px;
@@ -296,7 +283,7 @@ a{
         padding-top: 0;
         justify-content:space-evenly;
     }
-    header > .header-item > ul > li
+    .header-item > ul > li
     {
         cursor: pointer;
         text-transform: uppercase;
@@ -323,7 +310,7 @@ a{
         border-radius: 10%;
     }
         /* About Info */
-        #About > .About-Info 
+        .About-Info 
         {
             padding-top: 100px;
             width: 45%;
@@ -333,20 +320,20 @@ a{
             flex-direction: column;
         }
             /* TopBox */
-            #About > .About-Info > #Top-Box
+            .About-Info > #Top-Box
             {
                 width: 100%;
                 height: 250px;
             }
             /* MiddleBox */
-            #About > .About-Info > #Middle-Box
+            .About-Info > #Middle-Box
             {
                 width: 100%;
                 height: 300px;
                 display: flex;
                 flex-direction: row;
             }
-            #About > .About-Info > #Middle-Box > ul
+            #Middle-Box > ul
             {
                 height: 300px;
                 list-style-type: none;
@@ -355,26 +342,26 @@ a{
                 flex-direction: column;
                 justify-content: space-around;
             }
-            #About > .About-Info > #Middle-Box > .Subtitle
+            .Subtitle
             {
                 width: 30%;
             }
-            #About > .About-Info > #Middle-Box > .Subtitle > li
+            .Subtitle > li
             {
                 cursor: default;
                 font-size: 25px;
             }
-            #About > .About-Info > #Middle-Box > .Data
+            .Data
             {
                 width: 70%;
             }
-            #About > .About-Info > #Middle-Box > .Data > li
+            .Data > li
             {
                 cursor: default;
                 font-size: 20px;
             }
             /* BottomBox */
-            #About > .About-Info > #Bottom-Box
+            #Bottom-Box
             {
                 width: 100%;
                 height: 100px;
@@ -383,7 +370,7 @@ a{
                 display: flex;
                 flex-direction: row;
             }
-            #About > .About-Info > #Bottom-Box > div
+            #Bottom-Box > div
             {
                 height: 50px;
                 width: 80px;
@@ -392,12 +379,12 @@ a{
                 flex-direction: row;
                 transition:all 0.5s ease-in-out;
             }
-            #About > .About-Info > #Bottom-Box > div:hover
+            #Bottom-Box > div:hover
             {
                 width: 150px;
                 transition:all 0.7s ease-in-out;
             }
-            #About > .About-Info > #Bottom-Box  img
+            #Bottom-Box  img
             {
                 position: absolute;
                 margin-left: 10px;
@@ -405,7 +392,7 @@ a{
                 height: 50px;
                 border-radius:30%;
             }
-            #About > .About-Info > #Bottom-Box  p
+            #Bottom-Box  p
             {
                 position: absolute;
                 margin-top: 10px;
@@ -418,7 +405,7 @@ a{
                 opacity: 0;
                 transition: all 0.4s ease-in-out;
             }
-            #About > .About-Info > #Bottom-Box  p:hover
+            #Bottom-Box  p:hover
             {
                 opacity: 100;
                 width: 100px;
@@ -434,7 +421,7 @@ a{
 }
 
     /* SkillsBox */
-        #Skills > #Skills-Box
+        #Skills-Box
         {
             margin-left: 20%;
             margin-right: 20%;
@@ -447,7 +434,7 @@ a{
             flex-wrap: wrap;
         }
             /* SkillsCard */
-            #Skills > #Skills-Box >.Skills-Card
+            .Skills-Card
             {
                 width: 30%;
                 height: 350px;
@@ -455,7 +442,7 @@ a{
                 border-radius: 25px;
                 flex-direction: column;
             }
-            #Skills > #Skills-Box >.Skills-Card >h2
+            .Skills-Card >h2
             {
                 text-align: center;
                 font-size: 25px;
@@ -463,20 +450,19 @@ a{
                 font-weight: 600;
             }
             
-            #Skills > #Skills-Box >.Skills-Card  > div 
+            .Skills-Card  > div 
             {   
                 align-self: center;
                 border-radius: 50%;
             }
-            #Skills > #Skills-Box >.Skills-Card  .CircleBack
+            .CircleBack
             {
                 margin-top: 60px;
                 width: 200px;
                 height: 200px;
                 position: absolute;
-                background-color: aqua;
             }           
-            #Skills > #Skills-Box >.Skills-Card  .CircleTop
+            .CircleTop
             {
                 margin-top: 70px;
                 width: 180px;
@@ -484,7 +470,7 @@ a{
                 position: absolute;
                 transition: all 0.3s ease-in-out;
             }
-            #Skills > #Skills-Box >.Skills-Card > p
+            .Skills-Card > p
             {   
                 position: relative;
                 font-size: 25px;
@@ -529,7 +515,7 @@ a{
                  down , down-left , percent , center) */
                 clip-path: polygon(50% 0 , 100% 0 , 100% 50% , 100% 100% , 50% 50%);
             }
-            #Skills > #Skills-Box >.Skills-Card > .CircleTop  img
+            .CircleTop  img
             {
 
                 margin-left: 15%;
@@ -539,7 +525,7 @@ a{
                 border: none !important;
                 background: transparent;
             }  
-            #Skills > #Skills-Box >.Skills-Card >.Card-Footer
+            .Card-Footer
             {
                 width: 100%;
                 height: 75px;
@@ -550,7 +536,7 @@ a{
                 flex-direction: row;
                 justify-content: space-evenly;
             } 
-            #Skills > #Skills-Box >.Skills-Card >.Card-Footer > div
+            .Card-Footer > div
             {
                 cursor: pointer;
                 margin-top: 15px;
@@ -558,12 +544,12 @@ a{
                 height: 50px;
                 transition: all 0.5s ease-in-out;
             }
-            #Skills > #Skills-Box >.Skills-Card >.Card-Footer > div:hover
+            .Card-Footer > div:hover
             {
                 margin-top: 0;
                 transition: all 0.5s ease-in-out;
             }
-            #Skills > #Skills-Box >.Skills-Card >.Card-Footer > div > img
+            .Card-Footer > div > img
             {
                 margin-left: 3px;
                 width: 40px;
@@ -579,7 +565,7 @@ a{
     height: 1000px;
 }
     /* ServicesBox */
-    #Services > #ServicesBox
+    #ServicesBox
     {
         margin-left: 15%;
         margin-right: 15%;
@@ -591,7 +577,7 @@ a{
         justify-content: space-evenly;
         align-content: space-evenly;
     }
-    #Services > #ServicesBox > div
+    #ServicesBox > div
     {
         width: 22%;
         height: 300px;
@@ -600,7 +586,7 @@ a{
         border-top-right-radius: 25%;
         border-bottom-left-radius: 25%;
     }
-    #Services > #ServicesBox > div > .Services-img
+    .Services-img
     {
         position: absolute;
         width: 90px;
@@ -610,7 +596,7 @@ a{
         margin-left: 20px;
         box-shadow:0px 15px 15px;
     }
-    #Services > #ServicesBox > div > .Services-img > img
+    .Services-img > img
     {
         background: transparent;
         border: none;
@@ -619,7 +605,7 @@ a{
         margin-top: 5px;
         margin-left: 5px;
     }
-    #Services > #ServicesBox > div > h3
+    #ServicesBox > div > h3
     {
         text-align: left;
         margin-top: 75px;
@@ -628,7 +614,7 @@ a{
         font-size: 20px;
         font-weight: 500;
     }
-    #Services > #ServicesBox > div > .ServicesText
+    .ServicesText
     {
         margin-top: 5px;
         margin-right: 10%;
@@ -638,13 +624,13 @@ a{
         width: 80%;
         height: 120px;
     }
-    #Services > #ServicesBox > div > .ServicesText>p
+    .ServicesText>p
     {
         text-align: left;
         font-size: 15px;
         font-weight: 300;
     }
-    #Services > #ServicesBox > div > .ServicesIcon
+    .ServicesIcon
     {
         align-self: self-end;
         width: 50%;
@@ -653,7 +639,7 @@ a{
         flex-direction: row;
         justify-content: end;
     }
-    #Services > #ServicesBox > div > .ServicesIcon > img
+    .ServicesIcon > img
     {
         cursor: pointer;
         width: 25%;
@@ -662,7 +648,7 @@ a{
         background: transparent;
         border : none;
     }
-    #Services > #ServicesBox > div > .ServicesIcon > img:hover
+    .ServicesIcon > img:hover
     {
         transform: rotateY(360deg);
         transition: all 1.5s ease-in-out;
@@ -868,7 +854,7 @@ a{
     height: 1000px;
 }
     /* BlogBox */
-    #Blog > #BlogBox
+    #BlogBox
     {
         z-index: 2;
         margin-top: 20px;
@@ -882,7 +868,7 @@ a{
         justify-content: space-evenly;
         align-content : space-evenly;
     }
-    #Blog > #BlogBox >div
+    #BlogBox >div
     {
         z-index: 3;
         width: 24%;
@@ -890,7 +876,7 @@ a{
         border-radius:15px;
         padding: 0 !important;
 }
-    #Blog > #BlogBox > div > img
+    #BlogBox > div > img
     {
         width: 100%;
         height: 100%;
@@ -899,7 +885,7 @@ a{
         background:transparent;
         border: none;
     }
-    #Blog > #BlogBox > div > .BlogInfo 
+    .BlogInfo 
     {
         opacity: 70%;
         width: 98%;
@@ -910,13 +896,13 @@ a{
         flex-direction: column;
         transition: all 1s ease-in-out;
     } 
-    #Blog > #BlogBox > div > .OpenDetail
+    .OpenDetail
     {
         margin-top: -64%;
         height: 80%;
         transition: all 1s ease-in-out;
     }
-    #Blog > #BlogBox > div > .CloseDetail
+    .CloseDetail
     {
         overflow: hidden;
         z-index: 1;
@@ -934,7 +920,7 @@ a{
       opacity: 100%;
       transition: all 2s ease-in-out;
     }
-    #Blog > #BlogBox > div > .BlogInfo > .Blogbtn
+    .Blogbtn
     {
         margin-left: 25%;
         margin-right: 25%;
@@ -942,18 +928,18 @@ a{
         width: 50%;
         height: 50px;
     }
-    #Blog > #BlogBox > div > .BlogInfo > h5 
+    .BlogInfo > h5 
     {
         text-align: center;
         font-size: 25px;
     }
-    #Blog > #BlogBox > div > .BlogInfo > p
+    .BlogInfo > p
     {
         margin-right: 10%;
         margin-left: 10%;
         font-size: 16px;
     }
-    #Blog > #BlogBox > div > .BlogInfo > .Blogbtn> img
+    .Blogbtn> img
     {
         background : transparent ;
         border: none;
