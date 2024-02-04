@@ -1,0 +1,541 @@
+/* Public Style */
+body 
+{
+    padding: 0 !important;
+}
+p , h1 , h2 , h3 , h4 , h5 , h6 , span 
+{
+    cursor: default;
+}
+a{
+    text-decoration: none;
+}
+.hidden
+{
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.beforeTitle
+{
+    text-align: center;
+    text-transform: capitalize;
+}
+.Title
+{
+    text-align: center;
+    text-transform: capitalize;
+}
+.nextTitle
+{
+    text-align: center;
+    text-transform: capitalize;
+}
+/* Home */
+    /* Nav */
+        #Nav
+        {
+            position: absolute;
+            background-color: transparent;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .nav-username
+        {
+            display: flex;
+            justify-content: start;
+        }
+        .nav-item 
+        {
+            justify-content: space-between;
+        }
+        .nav-item > ul
+        {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .nav-item > ul > li
+        {
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .nav-item > ul > li >a
+        {
+           display: flex;
+           transition: all 0.5s ease-in-out;
+        }
+        .nav-item > ul > li >a:hover
+        {
+            transition: all 0.5s ease-in-out;
+        }
+    /* Baner */
+        #Baner
+        {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+        }
+        /* BanerLeftSide */
+            #BanerLeftSide-1 
+            {
+                position: absolute;
+            }
+            #BanerLeftSide-2 
+            {
+                position: absolute;
+            }
+        /* BanerRightSide */
+
+            #BanerRightSide > img
+            {
+                position: absolute;
+                display:flex !important;
+                transition: all 1s ease-in;
+            }
+        /* BanerText */
+            #BanerText
+            {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                position: absolute;
+            }
+            #BanerButton
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            #btnHireMe
+            {
+                border: none ;
+            }
+    /* Statistics */
+        #Statistics
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        #Statistics > div
+        {   
+            display: flex;
+            flex-direction: row;
+        }
+        #Statistics > div > p
+        {
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+        }
+        #Statistics > div > p:hover
+        {
+            transition: all 0.5s ease-in-out;
+        }
+
+/* Header */
+    header
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .header-username
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .header-item
+    {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-item > ul
+    {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+    .header-item > ul > li
+    {
+        cursor: pointer;
+        text-transform: uppercase;
+        align-self: center;
+    }
+/* About */
+    #About
+    {
+        display: flex;
+        flex-direction: row;
+    }
+        /* About Info */
+        .About-Info 
+        {
+            display: flex;
+            flex-direction: column;
+        }
+            /* MiddleBox */
+            .About-Info > #Middle-Box
+            {
+                display: flex;
+                flex-direction: row;
+            }
+            #Middle-Box > ul
+            {
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            .Subtitle > li
+            {
+                cursor: default;
+            }
+            .Data > li
+            {
+                cursor: default;
+            }
+            /* BottomBox */
+            #Bottom-Box
+            {
+                display: flex;
+                flex-direction: row;
+            }
+            #Bottom-Box > div
+            {
+                border-right: 2px solid black ;
+                display: flex;
+                flex-direction: row;
+                transition:all 0.5s ease-in-out;
+            }
+            #Bottom-Box > div:hover
+            {
+                transition:all 0.7s ease-in-out;
+            }
+            #Bottom-Box  img
+            {
+                position: absolute;
+            }
+            #Bottom-Box  p
+            {
+                position: absolute;
+                text-align: left;
+                opacity: 0;
+                transition: all 0.4s ease-in-out;
+            }
+            #Bottom-Box  p:hover
+            {
+                transition: all 0.7s ease-in-out;
+            }
+/* Skills */
+    /* SkillsBox */
+        #Skills-Box
+        {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction :row;
+            flex-wrap: wrap;
+        }
+            /* SkillsCard */
+            .Skills-Card
+            {
+                display: flex;  
+                flex-direction: column;
+            }
+            .Skills-Card >h2
+            {
+                text-align: center;
+            }
+            
+            .Skills-Card  > div 
+            {   
+                align-self: center;;
+            }
+            .CircleBack
+            {
+                position: absolute;
+            }           
+            .CircleTop
+            {
+                position: absolute;
+                transition: all 0.3s ease-in-out;
+            }
+            .Skills-Card > p
+            {   
+                position: relative;
+            }
+            .CircleProgres
+            {
+                position: absolute;
+            } 
+            .CircleTop  img
+            {
+                border: none !important;
+                background: transparent;
+            }  
+            .Card-Footer
+            {
+                border :none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            } 
+            .Card-Footer > div
+            {
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+            }
+            .Card-Footer > div:hover
+            {
+                transition: all 0.5s ease-in-out;
+            }
+            .Card-Footer > div > img
+            {
+                background: transparent !important;
+                border: none;
+            }
+/* Services */
+    /* ServicesBox */
+    #ServicesBox
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+    #ServicesBox > div
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .Services-img
+    {
+        position: absolute;
+    }
+    .Services-img > img
+    {
+        background: transparent;
+        border: none;
+    }
+    #ServicesBox > div > h3
+    {
+        text-align: left;
+    }
+    .ServicesText>p
+    {
+        text-align: left;
+    }
+    .ServicesIcon
+    {
+        align-self: self-end;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    .ServicesIcon > img
+    {
+        cursor: pointer;
+        background: transparent;
+        border : none;
+    }
+    .ServicesIcon > img:hover
+    {
+        transform: rotateY(360deg);
+        transition: all 1.5s ease-in-out;
+}
+/* Project */
+    /* ProjectBox */
+    #ProjectBox
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items : start;
+    }
+    .Project_img>img
+    {
+        height: auto;
+    }
+    .Project_Info
+    {
+        display : flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    .Project_Info > div
+    {
+        text-align: center;
+    }
+    .Project_Info>p
+    {
+        text-align: center;
+    }
+    .Project_Info > div > a > img
+    {
+        width: auto;
+        border : none;
+        background:transparent ;
+    }
+    /* Client */
+#Client
+{
+    position: relative;
+}
+    /* Comments */
+    .item
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .active
+    {
+        border: none !important;
+    }
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev
+    {
+        position: absolute !important;
+    }
+    .owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover
+    {
+        background:transparent !important;
+    }
+
+    .Comment_Text , .Client_Info
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;  
+    }
+    .Quote_Mark>img
+    {
+        height: auto;
+    }
+    .Client_Comment
+    {
+        text-align: center;
+    }
+    .Client_img
+    {
+        cursor: pointer;
+    }
+    .Client_img>img
+    {
+        border: 5px solid !important;
+        background:transparent !important;
+    }
+    .Client_Name
+    {
+        text-align: left !important;
+    }
+    .Client_Name>h4
+    {
+        cursor: pointer;
+    }
+    .Client_Name>h5
+    {
+        cursor: pointer;
+    }
+/* Blog */
+#Blog
+{
+    position: relative;
+}
+    /* BlogBox */
+    #BlogBox
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content : space-evenly;
+    }
+    #BlogBox > div > img
+    {
+        background:transparent;
+        border: none;
+    }
+    .BlogInfo 
+    {
+        display: flex;
+        flex-direction: column;
+        transition: all 1s ease-in-out;
+    } 
+    .OpenDetail
+    {
+        transition: all 1s ease-in-out;
+    }
+    .CloseDetail
+    {
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+    .HideDetail
+    {
+        opacity: 0% !important;
+        transition: all 0.5s ease-in-out;
+    }
+    .ShowDetail
+    {
+      opacity: 100%;
+      transition: all 2s ease-in-out;
+    }
+    .BlogInfo > h5 
+    {
+        text-align: center;
+    }
+    .Blogbtn> img
+    {
+        background : transparent ;
+        border: none;
+    }
+
+/* Contact */
+#Contact
+{
+    position: absolute !important;
+}
+    /* ContactBox */
+    #ContactBox
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items :center;
+    }
+    #ContactBox>form
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #ContactBox>form input 
+    {
+        border:5px solid;
+    }
+    .EmailFullName
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    } 
+    .ConatctInfo
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .ConatctInfo > h4 > p
+    {
+        text-align: left;
+    }
