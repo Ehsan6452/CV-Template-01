@@ -161,7 +161,7 @@ body
         }
         .CircleBack
         {
-            background-color: var(--Alert-Color);
+            background-color: var(--Alert-Color) !important;
         }
         .CircleProgres
         {
