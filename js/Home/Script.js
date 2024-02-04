@@ -1,3 +1,32 @@
+// Script for slider
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    nav:true,
+    responsive:{
+        0:{
+            items:3
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+// 
+function ChangeLanguage (language) 
+{
+    if (language == 'en')
+    {
+        window.location.href = "Home-en.html";
+    }
+    else if (language == 'fa')
+    {
+        window.location.href = "Home-fa.html";
+    }
+}
+// 
 var Tab_About = document.getElementById('About-Tab');
 var Tab_Skills = document.getElementById('Skills-Tab');
 var Tab_Services = document.getElementById('Services-Tab');
@@ -56,6 +85,26 @@ function TabChange(SectionName)
                 Tab_Project.classList.add('active');
                 Tab_Blog.classList.remove('active');
                 Tab_Contact.classList.remove('active');
+                break;
+            }
+        case 'Blog':
+            {
+                Tab_About.classList.remove('active');
+                Tab_Skills.classList.remove('active');
+                Tab_Services.classList.remove('active');
+                Tab_Project.classList.remove('active');
+                Tab_Blog.classList.add('active');
+                Tab_Contact.classList.remove('active');
+                break;
+            }
+        case 'Contact':
+            {
+                Tab_About.classList.remove('active');
+                Tab_Skills.classList.remove('active');
+                Tab_Services.classList.remove('active');
+                Tab_Project.classList.remove('active');
+                Tab_Blog.classList.remove('active');
+                Tab_Contact.classList.add('active');
                 break;
             }
             
