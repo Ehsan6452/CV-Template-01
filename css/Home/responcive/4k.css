@@ -1,0 +1,843 @@
+@media (min-width : 1440px) 
+{ 
+    /* Public Style */
+    body 
+    {
+        width: 100% !important;
+    }
+    .active
+    {
+        border-bottom : 3px solid !important;
+        padding-bottom: 10px;
+    }
+    .beforeTitle
+    {
+        font-size: 18;
+        font-weight: 300;
+    }
+    .Title
+    {
+        font-size: 28;
+        margin-top: 15px;
+        font-weight: 500;
+    }
+    .nextTitle
+    {
+        margin-top: 25px;
+        font-size: 18;
+        font-weight: 300;
+    }
+    /* Home */
+        /* Nav */
+        #Nav
+        {
+            margin-left: 10%;
+            width: 80%;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            height: 100px;
+            padding-top: 30px;
+        }
+        .nav-username
+        {
+            width: 40%;
+            padding-top: 15px;
+            margin: 0;
+            font-size: 35px;
+        }
+        .nav-item
+        {
+            width: 60%;
+            padding: 0;
+            margin: 0; 
+        }
+        .nav-item > ul
+        {
+            padding-top: 17px;
+            padding-left: 0;
+            padding-top: 0;
+        }
+        .nav-item > ul > li
+        {
+            height: 75px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .nav-item > ul > li >a
+        {
+            padding-top:30px ;
+            height: 75px;
+        }
+        .nav-item > ul > li >a:hover
+        {
+            padding-top: 0px;
+        }
+        /* Banner */
+        #Baner
+        {
+            width: 100%;
+            height: 800px; 
+        }
+        /* BanerLeftSide */
+        #BanerLeftSide-1  
+        {
+            width: 40%;
+            height: 800px;
+            clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+        }
+        #BanerLeftSide-2
+        {
+            width: 39.5%;
+            height: 800px;
+            clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+        }
+        /* Banner Right Side */
+        #BanerRightSide
+        {
+            width: 65%;
+            margin-left: 35%;
+            height: 800px;
+        }
+        #BanerRightSide>img
+        {
+            width: 700px;
+            height: 800px;
+            margin-left: 200px;
+        }
+        /* BannerText */
+        #BanerText
+        {
+            top: 30% ;
+            left: 20% ;
+            width: 600px;
+        }
+        #BanerJobTitle
+        {
+            font-size: 25px;
+            font-weight: 700;
+        }
+        #BanerSentence
+        {
+            font-size: 45px;
+            font-weight: 700;
+        }
+        #BanerButton
+        {
+            width: 300px;
+            height: 100px;
+        }
+        #btnHireMe
+        {
+            font-size: 20px;
+            border-radius: 7px;
+            width: 100px;
+            height: 50px;
+        }
+        #btnDownloadCV
+        {
+            font-size: 20px;
+            border: 2px solid ;
+            border-radius: 7px;
+            width: 150px;
+            height: 50px;
+        }
+    /* Statistics */
+    #Statistics
+    {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    #Statistics > div
+    {
+        margin-top: 5px;
+        width: 300px;
+        height: 200px; 
+    }
+    #Statistics > div > p
+    {
+        font-size: 35px;
+        margin-top: 50px;
+        margin-left: 10px;
+        padding-top: 20px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    #Statistics > div > p:hover
+    {
+        margin-top: 20px;
+    }
+    #Statistics > div > div
+    {
+        margin-top: 60px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    #Statistics > div > div > p
+    {
+        font-size: 20px;
+    }
+    #Statistics > div > div > p >span
+    {
+        font-weight: 500;
+        font-size: 25px;
+    }
+    #Statistics > div > div > span
+    {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    /* Header */
+    header
+    {
+        width: 100%;
+        height: 100px; 
+        padding-top: 25px; 
+    }
+    .header-username
+    {
+        width: 30%;
+        margin: 0;
+        font-size: 35px;
+    }
+    .header-item
+    {
+        width: 70%; 
+    }
+    .header-item > ul
+    {
+        width: 100%;
+        padding-top: 17px;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .header-item > ul > li
+    {
+        font-size: 20px;
+        font-weight: 500; 
+    }
+    /* About */
+    #About
+    {
+        padding-top: 100px;
+        padding-left: 15%;
+        padding-right: 15%;
+        width: 100%;
+        height: 1000px;
+    }
+    #About > img
+    {
+        width: 45%;
+        height: 800px;
+        margin-top: 50px;
+        border-radius: 10%;
+    }
+        /* About Info */
+        .About-Info 
+        {
+            padding-top: 100px;
+            width: 45%;
+            height: 900px;
+            margin-left: 5%;
+        }
+            /* TopBox */
+            .About-Info > #Top-Box
+            {
+                width: 100%;
+                height: 250px;
+            }
+            /* MiddleBox */
+            .About-Info > #Middle-Box
+            {
+                width: 100%;
+                height: 300px;
+            }
+            #Middle-Box > ul
+            {
+                height: 300px;
+                padding-left: 0;
+            }
+            .Subtitle
+            {
+                width: 30%;
+            }
+            .Subtitle > li
+            {
+                font-size: 25px;
+            }
+            .Data
+            {
+                width: 70%;
+            }
+            .Data > li
+            {
+                font-size: 20px;
+            }
+            /* BottomBox */
+            #Bottom-Box
+            {
+                width: 100%;
+                height: 100px;
+                padding-top: 50px;
+                padding-left: 50px;
+            }
+            #Bottom-Box > div
+            {
+                height: 50px;
+                width: 80px;
+                border-right: 2px solid black ;
+            }
+            #Bottom-Box > div:hover
+            {
+                width: 150px;
+            }
+            #Bottom-Box  img
+            {
+                margin-left: 10px;
+                width: 50px;
+                height: 50px;
+                border-radius:30%;
+            }
+            #Bottom-Box  p
+            {
+                margin-top: 10px;
+                margin-left: 5px;
+                width: 100px;
+                height: 50px;
+                font-size: 20px;
+                font-weight: 500;
+                opacity: 0;
+            }
+            #Bottom-Box  p:hover
+            {
+                opacity: 100;
+                width: 100px;
+                padding-left: 70px;
+            }
+/* Skills */
+#Skills
+{
+    padding-top: 100px;
+    width: 100%;
+    height: 1000px;
+}
+
+    /* SkillsBox */
+        #Skills-Box
+        {
+            margin-left: 20%;
+            margin-right: 20%;
+            width: 60%;
+            height: 750px;
+        }
+            /* SkillsCard */
+            .Skills-Card
+            {
+                width: 30%;
+                height: 350px;
+                border-radius: 25px;
+            }
+            .Skills-Card >h2
+            {
+                font-size: 25px;
+                margin-top: 10px;
+                font-weight: 600;
+            }
+            
+            .Skills-Card  > div 
+            {   
+                border-radius: 50%;
+            }
+            .CircleBack
+            {
+                margin-top: 60px;
+                width: 200px;
+                height: 200px;
+            }           
+            .CircleTop
+            {
+                margin-top: 70px;
+                width: 180px;
+                height: 180px;
+            }
+            .Skills-Card > p
+            {   
+                font-size: 25px;
+                margin-left: 45%;
+                margin-top: 30%;
+            }
+            .CircleProgres
+            {
+                margin-top: 60px;
+                width: 200px;
+                height: 200px;
+            } 
+            .Progres-90
+            {
+                /* Left Side Circle Progress : */
+                /* clip-path : polygon ( up , up-right , right , down-right ,
+                 down , down-left , percent , center) */
+                clip-path: polygon(50% 0 , 100% 0 , 100% 50% , 100% 100%
+                 , 50% 100% ,0% 100%,0% 50%, 0 0, 10% 5%, 50% 50%);
+            }
+            .Progres-80
+            {
+                /* Left Side Circle Progress : */
+                /* clip-path : polygon ( up , up-right , right , down-right ,
+                 down , down-left , percent , center) */
+                clip-path: polygon(50% 0 , 100% 0 , 100% 50% , 100% 100%
+                 , 50% 100% ,0% 100%,0 50% , 0 40%, 50% 50%);
+            }
+            .Progres-60
+            {
+                /* Left Side Circle Progress : */
+                /* clip-path : polygon ( up , up-right , right , down-right ,
+                 down , down-left , percent , center) */
+                clip-path: polygon(50% 0 , 100% 0 , 100% 50% , 100% 100%
+                 , 50% 100% ,0% 100% , 50% 50%);
+            }
+            .Progres-40
+            {
+                /* Left Side Circle Progress : */
+                /* clip-path : polygon ( up , up-right , right , down-right ,
+                 down , down-left , percent , center) */
+                clip-path: polygon(50% 0 , 100% 0 , 100% 50% , 100% 100% , 50% 50%);
+            }
+            .CircleTop  img
+            {
+
+                margin-left: 15%;
+                margin-top: 15%;
+                width: 70%;
+                height: 70%;
+            }  
+            .Card-Footer
+            {
+                width: 100%;
+                height: 75px;
+                border-radius: 20px !important;
+                margin-top: 60px;
+            } 
+            .Card-Footer > div
+            {
+                margin-top: 15px;
+                width: 15%;
+                height: 50px;
+                transition: all 0.5s ease-in-out;
+            }
+            .Card-Footer > div:hover
+            {
+                margin-top: 0;
+                transition: all 0.5s ease-in-out;
+            }
+            .Card-Footer > div > img
+            {
+                margin-left: 3px;
+                width: 40px;
+                height: 40px;
+            }
+/* Services */
+#Services
+{
+    padding-top: 100px;
+    width: 100%;
+    height: 1000px;
+}
+    /* ServicesBox */
+    #ServicesBox
+    {
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+        height: 750px;
+    }
+    #ServicesBox > div
+    {
+        width: 22%;
+        height: 300px;
+        border-top-right-radius: 25%;
+        border-bottom-left-radius: 25%;
+    }
+    .Services-img
+    {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-top: -40;
+        margin-left: 20px;
+        box-shadow:0px 15px 15px;
+    }
+    .Services-img > img
+    {
+        width: 90%;
+        height: 90%;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    #ServicesBox > div > h3
+    {
+        margin-top: 75px;
+        margin-left: 15px;
+        width: 80%;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .ServicesText
+    {
+        margin-top: 5px;
+        margin-right: 10%;
+        margin-left: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 80%;
+        height: 120px;
+    }
+    .ServicesText>p
+    {
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .ServicesIcon
+    {
+        width: 50%;
+        height: 50px;
+    }
+    .ServicesIcon > img
+    {
+        width: 25%;
+        height: 80%;
+        margin-right: 20px;
+    }
+/* Project */
+#Project
+{
+    width: 100%;
+    height: 1000px;
+    padding-top: 100px;
+}
+
+    /* ProjectBox */
+    #ProjectBox
+    {
+        margin-left: 10%;
+        width: 80%;
+        margin-top: 50px;
+        height: 600px;
+    }
+    .Project_Card
+    {
+        width: 400px;
+        height: 600px;
+        border-radius : 18px;
+    }
+    .Project_img
+    {
+        width: 400px;
+        height: 400px;
+        border-radius : 18px;
+    }
+    .Project_img>img
+    {
+        width: 100%;
+        height: auto;
+        border-top-left-radius : 18px;
+        border-top-right-radius : 18px;
+    }
+    .Project_Info
+    {
+        width: 400px;
+        height: 200px;
+    }
+
+    .Project_Info > div
+    {
+        width: 200px;
+        height: 60px;
+    }
+    .Project_Info>h3
+    {
+        font-size: 30px;
+    }
+    .Project_Info>p
+    {
+        font-size: 18px;
+    }
+    .Project_Info > div > a > img
+    {
+        height: 50px;
+    }
+    /* Client */
+#Client
+{
+    padding-top: 30px;
+    z-index:5;
+    width: 100%;
+    height: 600px;
+}
+    /* Comments */
+    #Comments
+    {
+        margin-top: 20px;
+        margin-left: 5%;
+        margin-Right: 5%;
+        width: 90%;
+        height: 400px;
+    }
+
+    .owl-carousel
+    {
+        height: 350px;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 50px;
+    }
+    .item
+    {
+        height: 300px;
+        width: 420px;
+        border-radius : 24px;
+    }
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev
+    {
+        top: 50px !important;
+        font-size: 100px;
+        padding: 0;
+    }
+    .owl-carousel .owl-nav button.owl-next
+    {
+        right: -5% !important;
+    }
+    .owl-carousel .owl-nav button.owl-prev
+    {
+        left: -5% !important;
+    }
+
+    .Comment_Text , .Client_Info
+    {
+        width: 350px; 
+    }
+    .Comment_Text
+    {
+        height: 160px;
+    }
+    .Quote_Mark
+    {
+        width: 50px;
+    }
+    .Quote_Mark>img
+    {
+        width: 100%;
+    }
+    .Client_Comment
+    {
+        width: 300px;
+        font-size: 18px;
+    }
+    .Client_Info
+    {
+        height: 100px;
+    }
+    .Client_img
+    {
+        width: 100px;
+    }
+    .Client_img>img
+    {
+        width: 100px;
+        height: 100px;
+        border-radius:50%;
+        border: 5px solid !important;
+    }
+    .Client_Name
+    {
+        width: 280px;
+        padding-left: 10px;
+        padding-top : 10px;
+    }
+    .Client_Name>h4
+    {
+        font-size: 28px;
+    }
+    .Client_Name>h5
+    {
+        font-size: 18px;
+    }
+/* Blog */
+#Blog
+{
+    z-index: 1;
+    padding-top: 100px;
+    width: 100%;
+    height: 1000px;
+}
+    /* BlogBox */
+    #BlogBox
+    {
+        z-index: 2;
+        margin-top: 20px;
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 90%;
+        height: 750px;
+    }
+    #BlogBox >div
+    {
+        z-index: 3;
+        width: 24%;
+        height: 325px;
+        border-radius:15px;
+        padding: 0 !important;
+}
+    #BlogBox > div > img
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0 !important;
+        border-radius:15px;
+    }
+    .BlogInfo 
+    {
+        opacity: 70%;
+        width: 98%;
+        margin-left: 1%;
+        height: 0%;
+        margin-top: 0%;
+        transition: all 1s ease-in-out;
+    } 
+    .OpenDetail
+    {
+        margin-top: -64%;
+        height: 80%;
+        transition: all 1s ease-in-out;
+    }
+    .CloseDetail
+    {
+        z-index: 1;
+        height: 1%;
+        margin-top: -2%;
+        transition: all 0.5s ease-in-out;
+    }
+    .HideDetail
+    {
+        opacity: 0% !important;
+        transition: all 0.5s ease-in-out;
+    }
+    .ShowDetail
+    {
+      opacity: 100%;
+      transition: all 2s ease-in-out;
+    }
+    .Blogbtn
+    {
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 20px;
+        width: 50%;
+        height: 50px;
+    }
+    .BlogInfo > h5 
+    {
+        font-size: 25px;
+    }
+    .BlogInfo > p
+    {
+        margin-right: 10%;
+        margin-left: 10%;
+        font-size: 16px;
+    }
+    .Blogbtn> img
+    {
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+/* Contact */
+#Contact
+{
+    z-index: 2;
+    width: 100%;
+    height: 900px;
+    padding-top: 20px;
+}
+    /* ContactBox */
+    #ContactBox
+    {
+        margin-left: 15%;
+        margin-top: 50px;
+        width: 70%;
+        height: 600px;
+    }
+    #ContactBox>form
+    {
+        width: 800px;
+        height: 500px;
+        border-radius : 12px;
+    }
+    #ContactBox>form input 
+    {
+        border-radius : 18px;
+        border:5px solid;
+        padding-left: 20px;
+    }
+    #ContactBox>form > div
+    {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 30px;
+    }
+    .EmailFullName
+    {
+        height: 50px;
+
+    }
+    .FName , .LName
+    {
+        width: 300px;
+    }
+    .ESubject
+    {
+        width: 100%;
+        height: 70px;
+    } 
+    .EMessage
+    {
+        width: 100%;
+        height: 200px;
+    } 
+    .SubmitBtn
+    {
+        margin-left: 10%;
+        border-radius : 18px;
+        border : 5px solid;
+        width: 80%;
+        height: 50px;
+    }  
+    .ConatctInfo
+    {
+        width: 300px;
+        height: 500px;
+    }
+    .ConatctInfo > h4
+    {
+        width: 300px;
+        height: 80px;
+        font-size: 22px;
+        margin-top: -20px;
+    }
+    .ConatctInfo img
+    {
+        width: 65px;
+        height: 65px !important;
+        border-radius : 50%;
+        padding: 5px;
+        margin-top: 20px;
+    }
+    .ConatctInfo > h4 > p
+    {
+        font-size: 14px;
+        margin-top: -20px;
+        margin-left: 70px;
+    }
+}
