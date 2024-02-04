@@ -20,6 +20,34 @@ a{
     opacity: 0;
     transition: all 0.3s ease-in-out;
 }
+.beforeTitle
+{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18;
+    font-weight: 300;
+}
+.Title
+{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 28;
+    margin-top: 15px;
+    font-weight: 500;
+}
+.nextTitle
+{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 25px;
+    font-size: 18;
+    font-weight: 300;
+}
+.container
+{
+    margin-left: 10%;
+    width: 80%;
+}
 /* Home */
     /* Nav */
         #Nav
@@ -28,9 +56,6 @@ a{
             top: 0;
             left: 0;
             z-index: 10;
-            margin-left: 15%;
-            margin-right: 15%;
-            width: 70%;
             height: 100px;
             padding-top: 20px;
             background-color: transparent;
@@ -38,9 +63,19 @@ a{
             flex-wrap: wrap;
             flex-direction: row;
         }
+        #nav > img
+        {
+            cursor: pointer;
+            width: 70px;
+            height: 70px;
+            margin-right: 7%;
+            border-radius:50%;
+            border: none;
+            background : transparent !important;
+        }
         #Nav > .nav-username
         {
-            width: 30%;
+            width: 25%;
             padding-top: 15px;
             margin: 0;
             font-size: 35px;
@@ -49,7 +84,7 @@ a{
         }
         #Nav > .nav-item 
         {
-            width: 70%;
+            width: 62%;
             padding: 0;
             margin: 0;
             justify-content: space-between;
@@ -303,23 +338,6 @@ a{
                 width: 100%;
                 height: 250px;
             }
-            #About > .About-Info > #Top-Box > .MyInfo
-            {
-                font-size: 18px;
-                font-weight: 200;
-                text-transform: capitalize;
-            }
-            #About > .About-Info > #Top-Box > .AboutMe
-            {
-                font-size: 28px;
-                font-weight: 500;
-                text-transform: capitalize;
-            }
-            #About > .About-Info > #Top-Box > .AboutText
-            {
-                font-size: 18;
-                font-weight: 400;
-            }
             /* MiddleBox */
             #About > .About-Info > #Middle-Box
             {
@@ -414,29 +432,7 @@ a{
     width: 100%;
     height: 1000px;
 }
-#Skills > h2
-{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 18;
-    font-weight: 300;
-}
-#Skills > h3
-{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 28;
-    margin-top: 15px;
-    font-weight: 500;
-}
-#Skills > p
-{
-    text-align: center;
-    text-transform: capitalize;
-    margin-top: 25px;
-    font-size: 18;
-    font-weight: 300;
-}
+
     /* SkillsBox */
         #Skills > #Skills-Box
         {
@@ -582,29 +578,6 @@ a{
     width: 100%;
     height: 1000px;
 }
-#Services > h2
-{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 18;
-    font-weight: 300;
-}
-#Services > h3
-{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 28;
-    margin-top: 15px;
-    font-weight: 500;
-}
-#Services > p
-{
-    text-align: center;
-    text-transform: capitalize;
-    margin-top: 25px;
-    font-size: 18;
-    font-weight: 300;
-}
     /* ServicesBox */
     #Services > #ServicesBox
     {
@@ -693,43 +666,209 @@ a{
     {
         transform: rotateY(360deg);
         transition: all 1.5s ease-in-out;
-        -webkit-transition: all 1.5s ease-in-out;
-        -moz-transition: all 1.5s ease-in-out;
-        -ms-transition: all 1.5s ease-in-out;
-        -o-transition: all 1.5s ease-in-out;
 }
 /* Project */
 #Project
 {
+    width: 100%;
+    height: 1000px;
+    padding-top: 100px;
+}
+
+    /* ProjectBox */
+    #ProjectBox
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items : start;
+        margin-left: 10%;
+        width: 80%;
+        margin-top: 50px;
+        height: 600px;
+    }
+    .Project_Card
+    {
+        width: 400px;
+        height: 600px;
+        border-radius : 18px;
+    }
+    .Project_img
+    {
+        width: 400px;
+        height: 400px;
+        border-radius : 18px;
+    }
+    .Project_img>img
+    {
+        width: 100%;
+        height: auto;
+        border-top-left-radius : 18px;
+        border-top-right-radius : 18px;
+    }
+    .Project_Info
+    {
+        width: 400px;
+        height: 200px;
+        display : flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    .Project_Info > div
+    {
+        width: 200px;
+        height: 60px;
+        text-align: center;
+    }
+    .Project_Info>h3
+    {
+        font-size: 30px;
+    }
+    .Project_Info>p
+    {
+        font-size: 18px;
+        text-align: center;
+    }
+    .Project_Info > div > a > img
+    {
+        height: 50px;
+        width: auto;
+        border : none;
+        background:transparent ;
+    }
+    /* Client */
+#Client
+{
+    padding-top: 30px;
+    position: relative;
+    z-index:5;
+    width: 100%;
+    height: 600px;
+}
+    /* Comments */
+    #Comments
+    {
+        margin-top: 20px;
+        margin-left: 5%;
+        margin-Right: 5%;
+        width: 90%;
+        height: 400px;
+    }
+
+    .owl-carousel
+    {
+        height: 350px;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 50px;
+    }
+    .item
+    {
+        height: 300px;
+        width: 420px;
+        border-radius : 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .active
+    {
+        border: none !important;
+    }
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev
+    {
+        position: absolute !important;
+        top: 50px !important;
+        font-size: 100px;
+        padding: 0;
+    }
+    .owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover
+    {
+        background:transparent !important;
+    }
+    .owl-carousel .owl-nav button.owl-next
+    {
+        right: -5% !important;
+    }
+    .owl-carousel .owl-nav button.owl-prev
+    {
+        left: -5% !important;
+    }
+
+    .Comment_Text , .Client_Info
+    {
+        width: 350px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;  
+    }
+    .Comment_Text
+    {
+        height: 160px;
+    }
+    .Quote_Mark
+    {
+        width: 50px;
+    }
+    .Quote_Mark>img
+    {
+        width: 100%;
+        height: auto;
+    }
+    .Client_Comment
+    {
+        width: 300px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .Client_Info
+    {
+        height: 100px;
+    }
+    .Client_img
+    {
+        width: 100px;
+        cursor: pointer;
+    }
+    .Client_img>img
+    {
+        width: 100px;
+        height: 100px;
+        border-radius:50%;
+        border: 5px solid !important;
+        background:transparent !important;
+    }
+    .Client_Name
+    {
+        width: 280px;
+        text-align: left !important;
+        padding-left: 10px;
+        padding-top : 10px;
+    }
+    .Client_Name>h4
+    {
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .Client_Name>h5
+    {
+        cursor: pointer;
+        font-size: 18px;
+    }
+/* Blog */
+#Blog
+{
+    position: relative;
+    z-index: 1;
     padding-top: 100px;
     width: 100%;
     height: 1000px;
 }
-#Project > h2
-{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 18;
-    font-weight: 300;
-}
-#Project > h3
-{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 28;
-    margin-top: 15px;
-    font-weight: 500;
-}
-#Project > p
-{
-    text-align: center;
-    text-transform: capitalize;
-    margin-top: 25px;
-    font-size: 18;
-    font-weight: 300;
-}
-    /* ProjectBox */
-    #Project > #ProjectBox
+    /* BlogBox */
+    #Blog > #BlogBox
     {
         z-index: 2;
         margin-top: 20px;
@@ -743,7 +882,7 @@ a{
         justify-content: space-evenly;
         align-content : space-evenly;
     }
-    #Project > #ProjectBox >div
+    #Blog > #BlogBox >div
     {
         z-index: 3;
         width: 24%;
@@ -751,7 +890,7 @@ a{
         border-radius:15px;
         padding: 0 !important;
 }
-    #Project > #ProjectBox > div > img
+    #Blog > #BlogBox > div > img
     {
         width: 100%;
         height: 100%;
@@ -760,7 +899,7 @@ a{
         background:transparent;
         border: none;
     }
-    #Project > #ProjectBox > div > .ProjectInfo 
+    #Blog > #BlogBox > div > .BlogInfo 
     {
         opacity: 70%;
         width: 98%;
@@ -771,13 +910,13 @@ a{
         flex-direction: column;
         transition: all 1s ease-in-out;
     } 
-    #Project > #ProjectBox > div > .OpenDetail
+    #Blog > #BlogBox > div > .OpenDetail
     {
         margin-top: -64%;
         height: 80%;
         transition: all 1s ease-in-out;
     }
-    #Project > #ProjectBox > div > .CloseDetail
+    #Blog > #BlogBox > div > .CloseDetail
     {
         overflow: hidden;
         z-index: 1;
@@ -795,7 +934,7 @@ a{
       opacity: 100%;
       transition: all 2s ease-in-out;
     }
-    #Project > #ProjectBox > div > .ProjectInfo > .Projectbtn
+    #Blog > #BlogBox > div > .BlogInfo > .Blogbtn
     {
         margin-left: 25%;
         margin-right: 25%;
@@ -803,18 +942,18 @@ a{
         width: 50%;
         height: 50px;
     }
-    #Project > #ProjectBox > div > .ProjectInfo > h5 
+    #Blog > #BlogBox > div > .BlogInfo > h5 
     {
         text-align: center;
         font-size: 25px;
     }
-    #Project > #ProjectBox > div > .ProjectInfo > p
+    #Blog > #BlogBox > div > .BlogInfo > p
     {
         margin-right: 10%;
         margin-left: 10%;
         font-size: 16px;
     }
-    #Project > #ProjectBox > div > .ProjectInfo > .Projectbtn> img
+    #Blog > #BlogBox > div > .BlogInfo > .Blogbtn> img
     {
         background : transparent ;
         border: none;
@@ -823,55 +962,105 @@ a{
         margin-right: 35%;
     }
 
-/* Client */
-#Client
+/* Contact */
+#Contact
 {
-    position: relative;
-    z-index:5;
+    z-index: 2;
+    position: absolute !important;
     width: 100%;
-    height: 500px;
+    height: 900px;
+    padding-top: 20px;
 }
-#Client > h2
-{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 18;
-    font-weight: 300;
-}
-#Client > h3
-{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 28;
-    margin-top: 15px;
-    font-weight: 500;
-}
-#Client > p
-{
-    text-align: center;
-    text-transform: capitalize;
-    margin-top: 25px;
-    font-size: 18;
-    font-weight: 300;
-}
-    /* Comments */
-    #Comments
+    /* ContactBox */
+    #ContactBox
     {
-        width: 60%;
-        margin-left: 20%;
-        margin-right: 20%;
-        height: 60%;
-        margin-top: 30px;
-        border: 1px solid black;
-        overflow-x:scroll;
+        margin-left: 15%;
+        margin-top: 50px;
+        width: 70%;
+        height: 600px;
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
+        align-items :center;
     }
-    #Comments > div
+    #ContactBox>form
     {
-        border: 1px solid black;
-        width: 30%;
-        height: 80%;
-        margin-top: 3%;
-        margin-left: 3%;
+        width: 800px;
+        height: 500px;
+        border-radius : 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #ContactBox>form input 
+    {
+        border-radius : 18px;
+        border:5px solid;
+        padding-left: 20px;
+    }
+    #ContactBox>form > div
+    {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 30px;
+    }
+    .EmailFullName
+    {
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    .FName , .LName
+    {
+        width: 300px;
+    }
+    .ESubject
+    {
+        width: 100%;
+        height: 70px;
+    } 
+    .EMessage
+    {
+        width: 100%;
+        height: 200px;
+    } 
+    .SubmitBtn
+    {
+        margin-left: 10%;
+        border-radius : 18px;
+        border : 5px solid;
+        width: 80%;
+        height: 50px;
+    }  
+    .ConatctInfo
+    {
+        width: 300px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .ConatctInfo > h4
+    {
+        width: 300px;
+        height: 80px;
+        font-size: 22px;
+        margin-top: -20px;
+    }
+    .ConatctInfo img
+    {
+        width: 65px;
+        height: 65px !important;
+        border-radius : 50%;
+        padding: 5px;
+        margin-top: 20px;
+    }
+    .ConatctInfo > h4 > p
+    {
+        font-size: 14px;
+        text-align: left;
+        margin-top: -20px;
+        margin-left: 70px;
     }
