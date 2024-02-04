@@ -16,17 +16,27 @@ body
     color: var(--Body) !important;
     border-bottom-color: var(--Body) !important;
 }
+
+.beforeTitle
+{
+    color: var(--BackGround-Color);
+}
+.Title
+{
+    color: var(--Text-Color);
+}
+.nextTitle
+{
+    color: var(--Primary-Color);
+}
+
 /* Home */
     /* Nav */
-        #Nav > .nav-username
+       .nav-username , .nav-item 
         {
             color: var(--Text-Color);
         }
-        #Nav > .nav-item 
-        {
-            color: var(--Text-Color);
-        }
-        #Nav > .nav-item > ul > li > a
+        .nav-item > ul > li > a
         {
             color: var(--Text-Color);
         }
@@ -40,96 +50,75 @@ body
         background-color: var(--BackGround-Color);
     }
         /* BanerRightSide */
-        #Baner > #BanerLeftSide-1
+       #BanerLeftSide-1
         {
             background-color:var(--Alert-Color);
         }
-        #Baner > #BanerLeftSide-2
+        #BanerLeftSide-2
         {
             background-color:var(--BackGround-Color)
         }
         /* BanerRightSide */
-            #Baner > #BanerRightSide
+            #BanerRightSide
             {
                 background-color: var(--Primary-Color);
             }
         /* BanerText */
-        #Baner > #BanerText > #BanerJobTitle
+        #BanerJobTitle
         {
             color: var(--Alert-Color);
         }    
-        #Baner > #BanerText > #BanerSentence
+        #BanerSentence
         {
             color: var(--Text-Color);
         }
-        #Baner > #BanerText > #BanerSentence > span
+        #BanerSentence > span
         {
             color: var(--Primary-Color);
         }
-        #Baner > #BanerText > #BanerButton >#btnHireMe
+        #btnHireMe , #btnDownloadCV
         {
             background-color: var(--Primary-Color);
             color: var(--BackGround-Color);
             transition: all 0.5s ease-in-out;
         }
-        #Baner > #BanerText > #BanerButton >#btnDownloadCV
-        {
-            background-color: var(--Primary-Color);
-            color: var(--BackGround-Color);
-            transition: all 0.5s ease-in-out;
-        }
-        #Baner > #BanerText > #BanerButton >#btnHireMe:hover
+        #btnHireMe:hover , #btnDownloadCV:hover
         {
             background: transparent ;
             color: var(--Primary-Color);
             border:2px solid var(--Primary-Color);
             box-shadow: 10px 10px var(--Primary-Color) ;
            transition: all 0.5s ease-in-out;
-
-        }
-        #Baner > #BanerText > #BanerButton >#btnDownloadCV:hover
-        {
-            background: transparent ;
-            color: var(--Primary-Color);
-            border:2px solid var(--Primary-Color);
-            box-shadow: 10px 10px var(--Primary-Color) ;
-            transition: all 0.5s ease-in-out;
-
         }
     /* Statistics */
-    #Home > #Statistics > div > p
+    #Statistics > div > p
     {
         background-color: var(--BackGround-Color);
         color: var(--Primary-Color);
     }
-    #Home > #Statistics > div > p:hover
+    #Statistics > div > p:hover
     {
         background: transparent;
         text-shadow:0px 40px 3px var(--BackGround-Color);
     }
-    #Home > #Statistics > div > div > p
+    #Statistics > div > div > p
     {
         color: var(--Text-Color);
     }
-    #Home > #Statistics > div > div > p > span
+    #Statistics > div > div  span
     {
         color: var(--BackGround-Color);
     }
-    #Home > #Statistics > div > div > span
-    {
-        color: var(--BackGround-Color);
-    }
-
 /* Header */
     header
     {
        background-color: var(--BackGround-Color);
     }
-    header > .header-item > ul > li > a
+    .header-item > ul > li > a
     {
         color: var(--Text-Color);
     }
-    header > .header-item > ul > li > a:hover
+    .header-item > ul > li > a:hover
     {
         color: var(--Body);
     }
@@ -138,64 +127,39 @@ body
     {
         background-image: linear-gradient(to bottom right, var(--BackGround-Color) , var(--Primary-Color));
     }
-        /* TopBox */
-        #About > .About-Info > #Top-Box > .MyInfo
-        {
-            color: var(--BackGround-Color);
-        }
-        #About > .About-Info > #Top-Box > .AboutMe
-        {
-            color: var(--Text-Color);
-        }
-        #About > .About-Info > #Top-Box > .AboutText
-        {
-            color: var(--Primary-Color);
-        }
         /* MiddleBox */
-        #About > .About-Info > #Middle-Box > .Subtitle > li
+        .Subtitle > li
         {
             color: var(--Primary-Color);
         }
-        #About > .About-Info > #Middle-Box > .Data > li
+        .Data > li
         {
             color: var(--Text-Color);
         }
         /* BottomBox */
-        #About > .About-Info > #Bottom-Box > div
+        #Bottom-Box > div
         {
             border-color: var(--Primary-Color);
         }
-        #About > .About-Info > #Bottom-Box  img
+        #Bottom-Box  img
         {
             background-color: var(--BackGround-Color);
         }
-        #About > .About-Info > #Bottom-Box  p
+        #Bottom-Box  p
         {
             color: var(--Text-Color);
         }
 /* Skills */
-#Skills > h2
-{
-    color: var(--BackGround-Color);
-}  
-#Skills > h3
-{
-    color: var(--Text-Color);
-}
-#Skills > p
-{
-    color: var(--Primary-Color);
-}
     /* SkillsCard */
-        #Skills > #Skills-Box >.Skills-Card
+        .Skills-Card
         {
             background-color: var(--BackGround-Color);
         }
-        #Skills > #Skills-Box >.Skills-Card >h2
+        .Skills-Card >h2
         {
             color: var(--Text-Color);
         }
-        #Skills > #Skills-Box >.Skills-Card > .CircleBack
+        .CircleBack
         {
             background-color: var(--Alert-Color);
         }
@@ -203,80 +167,105 @@ body
         {
             background-color: var(--Primary-Color);
         }
-        #Skills > #Skills-Box >.Skills-Card > .CircleTop
+        .CircleTop
         {
             background-color: var(--BackGround-Color);
         }
-        #Skills > #Skills-Box >.Skills-Card > p
+        .Skills-Card > p
         {
             color: var(--Body);
         }
-        #Skills > #Skills-Box >.Skills-Card >.Card-Footer
+        .Card-Footer
         {
             background: transparent !important;
         }
 /* Services */
-#Services > h2
-{
-    color: var(--BackGround-Color);
-}  
-#Services > h3
-{
-    color: var(--Text-Color);
-}
-#Services > p
-{
-    color: var(--Primary-Color);
-}
     /* ServicesBox */
-    #Services > #ServicesBox >div
+    #ServicesBox >div
     {
         background-color: var(--BackGround-Color);
     }
-    #Services > #ServicesBox > div > .Services-img
+    .Services-img
     {
         background-color: var(--Alert-Color);
     }
-    #Services > #ServicesBox > div > h3
+    #ServicesBox > div > h3
     {
         color: var(--Text-Color);
-    }
-/* Project */
-#Project > h2
-{
-    color: var(--BackGround-Color);
-}  
-#Project > h3
-{
-    color: var(--Text-Color);
-}
-#Project > p
-{
-    color: var(--Primary-Color);
-}
-    /* ProjectBox */
-    #Project > #ProjectBox > div > .ProjectInfo > h5 , p
-    {
-        color: var(--Body);
-    }
-    #Project > #ProjectBox > div > .ProjectInfo 
-    {
-        background-color : var(--Text-Color)
     }
 /* Client */
 #Client
 {
     background-color : var(--Alert-Color)
 }
-#Client > h2
+    /* Comment */
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev
+    {
+        color: var(--Primary-Color);
+    }
+    .owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover
+    {
+        color: var(--Body);
+    }
+    .item
+    {
+        background-color : var(--BackGround-Color);
+    }
+    .Client_Comment>p
+    {
+        color: var(--Primary-Color);
+    }
+    .Client_img>img
+    {
+        border-color : var(--Alert-Color) !important;
+    }
+    .Client_Name
+    {
+        color: var(--Text-Color);
+    }
+/* Blog */
+
+/* BlogBox */
+.BlogInfo > h5 , p
 {
-    color: var(--Primary-Color);
+    color: var(--Body);
 }
-#Client > h3
+.BlogInfo 
+{
+    background-color : var(--Text-Color)
+}
+
+/* Project */
+    .Project_Info > p , h3
+    {
+        color: var(--Primary-Color) !important;
+    }
+/* Contact */
+
+#ContactBox>form
+{
+    background-color :var(--BackGround-Color);
+}
+#ContactBox>form input 
+{
+    border-color : var(--Alert-Color);
+    background-color:var(--Body);
+}   
+
+.SubmitBtn
+{
+    background-color : var(--Alert-Color);
+    border-color:var(--Body);
+}
+.ConatctInfo img
+{
+    background-color : var(--Alert-Color);
+}
+.ConatctInfo > h4
 {
     color: var(--Text-Color);
 }
-#Client > p
+.ConatctInfo > h4 > p
 {
-    color: var(--Text-Color-2);
+    color: var(--Primary-Color);
 }
