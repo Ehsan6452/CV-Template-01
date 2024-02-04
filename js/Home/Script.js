@@ -15,18 +15,6 @@ $('.owl-carousel').owlCarousel({
     }
 })
 // 
-function ChangeLanguage (language) 
-{
-    if (language == 'en')
-    {
-        window.location.href = "Home-en.html";
-    }
-    else if (language == 'fa')
-    {
-        window.location.href = "Home-fa.html";
-    }
-}
-// 
 var Tab_About = document.getElementById('About-Tab');
 var Tab_Skills = document.getElementById('Skills-Tab');
 var Tab_Services = document.getElementById('Services-Tab');
